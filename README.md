@@ -15,6 +15,13 @@ Readers can access the specific usage of BasicTS through the following link:
 
 You can reproduce these models by running the following command:
 
+Few-shot
 ```bash
-python experiments/train.py -c baselines/SemProtoST/{DATASET_NAME}_{Few/Zero}.py --gpus '0'
+python experiments/train.py -c baselines/SemProtoST/{DATASET_NAME}_Inductive.py --gpus '0'
+python experiments/train.py -c baselines/SemProtoST/{DATASET_NAME}_Few.py --gpus '0'
+```
+
+Zero-shot
+```bash
+python experiments/train.py -c baselines/SemProtoST/{DATASET_NAME}_Inductive.py --gpus '0'
 ```
